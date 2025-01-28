@@ -16,7 +16,7 @@ const SkillCheck: React.FC = () => {
   const [result, setResult] = useState<RollResult | null>(null);
 
   const handleRoll = () => {
-    const roll = Math.floor(Math.random() * 20) + 1; // 1-20
+    const roll = Math.floor(Math.random() * 20) + 1;
     const skillBonus = skillPoints[selectedSkill.name] || 0;
     const abilityMod = abilityModifiers[selectedSkill.attribute];
     const total = roll + skillBonus + abilityMod;

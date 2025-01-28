@@ -249,3 +249,37 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
+
+.character-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.character-container {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.character-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+.character-header h2 {
+  margin: 0;
+}
+
+.character-header button {
+  background-color: #dc3545;
+}
+
+.character-header button:hover {
+  background-color: #c82333;
+}

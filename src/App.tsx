@@ -1,21 +1,21 @@
 import React from 'react';
 import './App.css';
-import { CharacterProvider } from './context/characterContext';
-import Layout from './components/layout';
+import CharacterList from './components/characters/CharacterList';
+import { CharacterListProvider } from './context/characterListContext';
 
-const App: React.FC = () => {
+function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>React Coding Exercise</h1>
+        <h1>Character Creator</h1>
       </header>
       <section className="App-section">
-        <CharacterProvider>
-          <Layout />
-        </CharacterProvider>
+        <CharacterListProvider>
+          <CharacterList />
+        </CharacterListProvider>
       </section>
     </div>
   );
-};
+}
 
 export default App;
