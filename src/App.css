@@ -17,23 +17,23 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
 }
 
 .App-section {
   flex: 1 1 0;
-  background-color: hsl(220deg 13% 13%);
-  color: white;
+  background-color: #222;
+  color: #fff;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #4dabf7;
 }
 
 @keyframes App-logo-spin {
@@ -43,4 +43,209 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.layout {
+  display: flex;
+  text-align: left;
+  width: 100%;
+}
+
+.classItem {
+  min-width: 200px;
+  cursor: pointer;
+  color: #4dabf7;
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.5rem;
+}
+
+.classItem:hover {
+  opacity: 0.8;
+}
+
+.reqList {
+  color: #868e96;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 5px;
+}
+
+.pointsCounter {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.valueDisplay {
+  display: flex;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #4dabf7;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background-color: #ced4da;
+  cursor: not-allowed;
+}
+
+.button:not(:disabled):hover {
+  background-color: #339af0;
+}
+
+.value {
+  min-width: 2.5rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+.class-container {
+  flex: 1;
+}
+.attributes-container {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 4px;
+
+  margin: 0 auto;
+  flex: 1;
+}
+
+.attribute-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 0.25rem 0;
+}
+
+.attribute-name {
+  min-width: 90px;
+  text-align: right;
+}
+
+.attribute-value {
+  min-width: 30px;
+  text-align: center;
+}
+
+.attribute-modifier {
+  color: #aaa;
+  font-size: 0.75rem;
+}
+
+.controls {
+  margin-left: auto;
+  display: flex;
+  gap: 0.25rem;
+}
+
+.control-button {
+  padding: 0.15rem 0.5rem;
+  border: 1px solid #666;
+  background-color: #333;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.control-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.control-button:not(:disabled):hover {
+  background-color: #444;
+}
+
+.active,
+.classItem.active {
+  color: lightgreen;
+}
+
+.helptext {
+  font-size: 0.75rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+h2 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 15px;
+}
+
+.skill-check-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.control-group label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.control-group select,
+.control-group input {
+  background: #333;
+  color: #fff;
+  border: 1px solid #666;
+  padding: 0.25rem;
+  border-radius: 4px;
+}
+
+.skill-check-result {
+  padding: 1rem;
+  background: #1a1a1a;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.success {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.failure {
+  color: #f44336;
+  font-weight: bold;
+}
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
